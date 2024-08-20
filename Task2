@@ -1,0 +1,63 @@
+#include <stdio.h>
+
+int main() {
+    int score = 0;
+    char answer;
+
+    printf("Welcome to the quiz game!\n");
+    printf("Please answer the following questions with A, B, C, or D.\n\n");
+
+    printf("Question 1: What is the capital of France?\n");
+    printf("A) Berlin\n");
+    printf("B) Paris\n");
+    printf("C) London\n");
+    printf("D) Rome\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+    if (answer == 'B' || answer == 'b') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Incorrect. The correct answer is B) Paris.\n");
+    }
+
+    printf("\nQuestion 2: What is the largest planet in our solar system?\n");
+    printf("A) Earth\n");
+    printf("B) Saturn\n");
+    printf("C) Jupiter\n");
+    printf("D) Uranus\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+    if (answer == 'C' || answer == 'c') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Incorrect. The correct answer is C) Jupiter.\n");
+    }
+
+    printf("\nQuestion 3: What is the smallest country in the world?\n");
+    printf("A) Vatican City\n");
+    printf("B) Monaco\n");
+    printf("C) Nauru\n");
+    printf("D) Tuvalu\n");
+    printf("Enter your answer: ");
+    scanf(" %c", &answer);
+    if (answer == 'A' || answer == 'a') {
+        printf("Correct!\n");
+        score++;
+    } else {
+        printf("Incorrect. The correct answer is A) Vatican City.\n");
+    }
+
+    printf("\nYou scored %d out of 3.\n", score);
+
+    if (score == 3) {
+        printf("Congratulations! You got a perfect score!\n");
+    } else if (score >= 2) {
+        printf("Good job! You did well.\n");
+    } else {
+        printf("Better luck next time.\n");
+    }
+
+    return 0;
+}
